@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Locations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .location-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .location-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .location-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        .location-card p {
+            color: #6b7280;
+        }
+        .location-card a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+        .location-card a:hover {
+            text-decoration: underline;
+            color: #0578b3;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-6 text-center">
+        <h1 class="text-3xl font-bold">Our Locations</h1>
+        <p class="text-lg mt-2">Find our offices and service centers</p>
+    </header>
+
+    <main class="container mx-auto py-10">
+        <section class="mb-12 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Select a Region</h2>
+            <p class="text-gray-600">
+                Explore our locations by region to find the nearest office or service center.
+            </p>
+            <div class="mt-6 flex justify-center">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#north-america" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        North America
+                    </a>
+                    <a href="#europe" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        Europe
+                    </a>
+                    <a href="#asia" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-r-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        Asia
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="north-america" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">North America</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Los Angeles, CA</h3>
+                    <p class="mb-2">123 Main Street</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <a href="/locations/los-angeles">View Details</a>
+                </div>
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">New York, NY</h3>
+                    <p class="mb-2">456 Broadway</p>
+                    <p class="mb-2">Phone: (212) 987-6543</p>
+                    <a href="/locations/new-york">View Details</a>
+                </div>
+                 <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Chicago, IL</h3>
+                    <p class="mb-2">789 Clark St</p>
+                    <p class="mb-2">Phone: (312) 555-9876</p>
+                    <a href="/locations/chicago">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="europe" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Europe</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">London, UK</h3>
+                    <p class="mb-2">10 Downing Street</p>
+                    <p class="mb-2">Phone: +44 20 7946 0987</p>
+                    <a href="/locations/london">View Details</a>
+                </div>
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Paris, France</h3>
+                    <p class="mb-2">5 Avenue Anatole France</p>
+                    <p class="mb-2">Phone: +33 1 45 55 90 92</p>
+                    <a href="/locations/paris">View Details</a>
+                </div>
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Berlin, Germany</h3>
+                    <p class="mb-2">1 Unter den Linden</p>
+                    <p class="mb-2">Phone: +49 30 203840</p>
+                    <a href="/locations/berlin">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="asia" class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Asia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Tokyo, Japan</h3>
+                    <p class="mb-2">1-2-3 Marunouchi, Chiyoda-ku</p>
+                    <p class="mb-2">Phone: +81 3 3211 2000</p>
+                    <a href="/locations/tokyo">View Details</a>
+                </div>
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Shanghai, China</h3>
+                    <p class="mb-2">100 Century Avenue, Pudong</p>
+                    <p class="mb-2">Phone: +86 21 6888 9999</p>
+                    <a href="/locations/shanghai">View Details</a>
+                </div>
+                <div class="location-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg">
+                    <h3 class="mb-2">Singapore</h3>
+                    <p class="mb-2">8 Marina View</p>
+                    <p class="mb-2">Phone: +65 6325 2000</p>
+                    <a href="/locations/singapore">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-700 py-4 text-center">
+        <p>© 2025 Our Locations | <a href="/privacy-policy" class="text-blue-500 hover:underline">Privacy Policy</a> | <a href="/terms-of-service" class="text-blue-500 hover:underline">Terms of Service</a></p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Smooth scrolling for region links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>
